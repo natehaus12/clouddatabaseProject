@@ -8,7 +8,7 @@ import os
 # initialize the database and connect this project to the database
 def initialize():
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"]  = "key.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"]  = "clouddatabaseProject\key.json"
 
     cred = credentials.ApplicationDefault()
     firebase_admin.initialize_app(cred, {
