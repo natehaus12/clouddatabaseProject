@@ -33,6 +33,7 @@ def add(db):
 
     data = {"fav_team": team}
     db.collection("people").document(name).set(data)
+    print("Successfully added!")
 
 ##############################################################################
 
